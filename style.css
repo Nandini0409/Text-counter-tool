@@ -1,0 +1,104 @@
+:root{
+    --primaryColor : #23292d;
+    --secondaryColor :#a29f3d ;
+    --tertioryColor : #eeedeed6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: var(--primaryColor);
+}
+
+main{
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.headings{
+    text-align: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    line-height: 3.3rem;
+    letter-spacing: -0.1rem;
+    font-weight: 300;
+    color: var(--secondaryColor);
+    padding: 10px;
+}
+
+h2{
+    color: var(--tertioryColor);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.mainBox{
+    width:min(400px, 90%);
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--tertioryColor);
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px;
+}
+
+#textField{
+    resize:vertical;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.childBoxes{
+    border-radius: inherit;
+    padding: 5px;
+    background-color: var(--primaryColor);
+    border: inherit;
+    color: var(--tertioryColor);
+    font-size: 1.1rem;
+    letter-spacing: -0.01rem;
+    height: auto;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: var(--secondaryColor);
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+    main{
+        flex-direction: column;
+        height: 80vh;
+    }
+}
+
+
+
+@media only screen and (max-width: 530px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 0.9rem;
+    }
+    .childBoxes{
+        font-size: 0.8rem;
+    }
+}
