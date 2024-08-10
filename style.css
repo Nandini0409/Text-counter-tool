@@ -77,6 +77,8 @@ h2{
 .btn{
     cursor: pointer;
     background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    font-weight: 500;
 }
 
 

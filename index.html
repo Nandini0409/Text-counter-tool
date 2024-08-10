@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="This is a simple Web App that counts number of word and character in a given text string.">
-    <title>Word And Character Counter</title>
+    <title>Text Counter Tool</title>
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +19,15 @@
 
 <body>
     <main>
-        <div class="headings">
+        <header class="headings">
             <h1>Text Counter Tool</h1>
             <h2>Instantly Track Words and Characters</h2>
-        </div>
+        </header>
 
         <div class="mainBox">
-            <textarea value="my name is nandini" type="text" id="textField" class="childBoxes"
+            <textarea type="text" id="textField" class="childBoxes"
                 placeholder="Enter the text here.." rows="10" cols="50"></textarea>
-            <input class="childBoxes btn" type="submit" id="submit">
+            <button class="childBoxes btn" id="submit">Submit</button>
             <button id="clearButton" class="childBoxes btn">Clear</button>
             <div class="childBoxes">
                 <p>Word count:</p>
